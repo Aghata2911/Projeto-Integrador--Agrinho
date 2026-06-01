@@ -1,0 +1,445 @@
+body {
+    background-color: #013220;
+    margin: 0;
+    padding-top: 80px;
+}
+
+/* CABEÇALHO */
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 70px;
+
+    background-color: #98FF98;
+
+    display: flex;
+    align-items: center;
+
+    z-index: 900;
+}
+
+header h1 {
+    margin: 0;
+    padding-left: 70px;
+
+    font-size: 28px;
+
+    color: black;
+}
+
+/* MENU HAMBÚRGUER */
+
+#menu-toggle {
+    display: none;
+}
+
+.hamburguer {
+    position: fixed;
+
+    top: 12px;
+    left: 15px;
+
+    font-size: 35px;
+
+    cursor: pointer;
+
+    color: black;
+
+    z-index: 1000;
+}
+
+/* MENU LATERAL */
+
+.menu {
+    position: fixed;
+
+    top: 70px;
+
+    left: -320px;
+
+    width: 300px;
+
+    height: calc(100vh - 70px);
+
+    background-color: #98FF98;
+
+    display: flex;
+    flex-direction: column;
+
+    transition: left 0.4s ease;
+
+    z-index: 800;
+}
+
+#menu-toggle:checked ~ .menu {
+    left: 0;
+}
+
+/* LINKS */
+
+.menu a {
+    width: 100%;
+    text-decoration: none;
+}
+
+/* BOTÕES DO MENU */
+
+.menu button {
+    width: 100%;
+
+    padding: 18px;
+
+    background-color: transparent;
+
+    border: none;
+
+    border-top: 1px solid black;
+
+    text-align: left;
+
+    cursor: pointer;
+
+    font-size: 16px;
+}
+
+.menu a:last-child button {
+    border-bottom: 1px solid black;
+}
+
+/* PAGINA INICIO */
+
+.banner {
+    position: relative;
+
+    width: calc(90% - 40px);
+
+    margin-top: 20px;
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-bottom: 20px;
+}
+
+.imagem-inicio {
+    width: 100%;
+
+    height: calc(100vh - 120px);
+
+    object-fit: cover;
+
+    display: block;
+
+    border-radius: 10px;
+
+    opacity: 0.55;
+}
+
+.titulo-banner {
+    position: absolute;
+
+    top: 20%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    width: 80%;
+
+    text-align: center;
+
+    color: white;
+
+    font-size: 42px;
+
+    font-weight: bold;
+
+    text-shadow: 3px 3px 10px black;
+}
+
+.titulo2-banner {
+    position: absolute;
+
+    top: 40%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    width: 80%;
+
+    text-align: center;
+
+    color: white;
+
+    font-size: 42px;
+
+    font-weight: bold;
+
+    text-shadow: 3px 3px 10px black;
+}
+
+.sub-titulo-banner {
+    position: absolute;
+
+    top: 70%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    width: 80%;
+
+    text-align: center;
+
+    color: white;
+
+    font-size: 30px;
+
+    font-weight: bold;
+
+    text-shadow: 3px 3px 10px rgb(204, 191, 6);
+}
+
+/* PÁGINA O AGRO */
+
+.o-agro {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 40px;
+
+    padding: 40px 60px;
+}
+
+.texto-agro {
+    width: 50%;
+
+    color: black;
+
+    font-size: 25px;
+
+    font-weight: bold;
+
+    line-height: 1.8;
+}
+
+.imagem-agro {
+    width: 45%;
+
+    border-radius: 10px;
+
+    object-fit: cover;
+}
+
+/* PÁGINA AGRICULTURA SUSTENTAVEL */
+
+.agricultura-sustentavel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 40px 60px;
+}
+
+.texto-agricultura-sustentavel {
+    width: 80%;
+    max-width: 1200px;
+
+    color: black;
+
+    font-size: 25px;
+
+    font-weight: bold;
+
+    line-height: 1.8;
+
+    text-align: center;
+}
+
+.imagem-sustentabilidade {
+    width: 70%;
+    max-width: 900px;
+
+    border-radius: 10px;
+
+    display: block;
+
+    margin: 40px auto 0 auto;
+}
+
+/* PÁGINA TECNOLOGIA NO CAMPO */
+
+
+.tecnologia-no-campo {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 40px;
+
+    padding: 40px 60px;
+}
+
+.texto-tecnologia-no-campo {
+    width: 50%;
+
+    color: black;
+
+    font-size: 25px;
+
+    font-weight: bold;
+
+    line-height: 1.8;
+}
+
+.imagem-tecnologia {
+    width: 45%;
+
+    border-radius: 10px;
+
+    object-fit: cover;
+}
+
+/* PÁGINA IMPACTOS AMBIENTAIS */
+
+.impactos-ambientais {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 40px;
+
+    padding: 40px 60px;
+}
+
+.texto-impactos-ambientais {
+    width: 50%;
+
+    color: black;
+
+    font-size: 25px;
+
+    font-weight: bold;
+
+    line-height: 1.8;
+}
+
+.imagem-impactos {
+    width: 45%;
+
+    border-radius: 10px;
+
+    object-fit: cover;
+}
+
+
+/* PÁGINA DESAFIOS E SOLUCOES */
+
+.desafios {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 40px 60px;
+}
+
+.texto-desafios {
+    width: 80%;
+    max-width: 1200px;
+
+    color: black;
+
+    font-size: 25px;
+
+    font-weight: bold;
+
+    line-height: 1.8;
+
+    text-align: center;
+    
+}
+
+.imagem-desafios {
+    width: 70%;
+    max-width: 900px;
+
+    border-radius: 10px;
+
+    display: block;
+
+    margin: 40px auto 0 auto;
+}
+
+.solucoes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 40px 60px;
+}
+
+.texto-solucoes {
+    width: 80%;
+    max-width: 1200px;
+
+    color: black;
+
+    font-size: 25px;
+
+    font-weight: bold;
+
+    line-height: 1.8;
+
+    text-align: center;
+}
+
+.imagem-solucoes {
+    width: 70%;
+    max-width: 900px;
+
+    border-radius: 10px;
+
+    display: block;
+
+    margin: 40px auto 0 auto;
+}
+
+.titulo-secao {
+    text-align: center;
+
+    font-size: 55px;
+
+    font-weight: bold;
+
+    color: #98FF98;
+
+    margin-bottom: 30px;
+
+    text-shadow:
+        0 0 10px rgba(152,255,152,0.5),
+        0 0 20px rgba(152,255,152,0.3);
+
+    position: relative;
+}
+
+.titulo-secao::after {
+    content: "";
+
+    display: block;
+
+    width: 180px;
+    height: 4px;
+
+    background-color: #98FF98;
+
+    margin: 12px auto 0 auto;
+
+    border-radius: 20px;
+}
